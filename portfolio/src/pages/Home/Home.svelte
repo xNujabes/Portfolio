@@ -10,24 +10,30 @@
             <p>
                 Explorez mes créations
             </p>
-            </div>
-            <div class="span-container">
-                <a href="" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon></a>
-            </div>
-            <p>
-                AAAAAAAAAAAAAAAAAAa
-            </p>
         </div>
+        <div class="arrow">
+            <a href="" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon></a>
+        </div>
+        <div class="">
+
+        </div>
+    </div>
 </body>
 
 <style>
-    body{
+    body {
+        margin-top: -100vh;
         width: 100vw;
         height: 100vh;
         display: flex;
-        justify-content:center;
-        align-items:center;
-        background-color:#eaeaea;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        margin: auto;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
     }
     .photo { 
         display: inline-block;
@@ -54,7 +60,11 @@
 
     .CTA p{
         text-align: center;
-        font-size: 60px;
+        font-size: 2em;
+    }
+
+    .arrow{
+        display: flex;
     }
     .scroll-down-arrow {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg);
@@ -66,13 +76,13 @@
     .scroll-down-link {
     position: absolute;
     z-index: 100;
-    cursor:pointer;
+    cursor: pointer;
+    left: 51%;
+    bottom: 10%;
     height: 60px;
     width: 80px;
     margin: 0px 0 0 -40px;
     line-height: 60px;
-    left: 50%;
-    bottom: 10px;
     color: #000000;
     text-align: center;
     font-size: 70px;
