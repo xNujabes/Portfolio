@@ -45,7 +45,7 @@
 
 <style lang="scss">
     @import "./style.scss";
-
+    
     :global(*) {
         font-family: "Zona Pro", sans-serif;
         overflow: auto;
@@ -55,6 +55,7 @@
 
     :global(body) {
         background: var(--background-color);
+        scroll-behavior: smooth;
     }
 
     main {

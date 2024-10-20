@@ -1,5 +1,5 @@
 <body>
-    <div>
+    <div class="hero">
         <div class="photo"> 
             <img src="public\assets\img\photo.jpg" /> 
         </div>
@@ -12,22 +12,29 @@
             </p>
         </div>
         <div class="arrow">
-            <a href="" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon></a>
+            <a href="#blabla" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon></a>
         </div>
-        <div class="">
-
-        </div>
+    </div>
+    <div class="core">
+        <section id="blabla">
+            AAAA
+        </section>
     </div>
 </body>
 
 <style>
-    body {
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .hero {
         margin-top: -100vh;
         width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         background-color: #ffffff;
         margin: auto;
     }
@@ -36,15 +43,10 @@
         display: none;
     }
     .photo { 
-        display: inline-block;
-        position: relative; 
         width: 200px; 
         height: 200px; 
         overflow: hidden; 
         border-radius: 50%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,0%);
     }
 
     .photo img { 
@@ -61,6 +63,11 @@
     .CTA p{
         text-align: center;
         font-size: 2em;
+    }
+
+    .core{
+        scroll-behavior: smooth;
+        margin-top: 1000px;
     }
 
     .arrow{
