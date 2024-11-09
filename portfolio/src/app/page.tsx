@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import HeroSection from "@/app/components/HeroSection";
 import Navbar from "@/app/components/Navbar";
 
