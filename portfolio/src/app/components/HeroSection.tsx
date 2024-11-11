@@ -34,10 +34,10 @@ const HeroSection = () => {
                 </p>
                 <div>
                     <button className="bg-white text-black w-full sm:w-fit px-4 py-2 rounded-full mr-4 hover:bg-slate-200 text-black">
-                        Linkedin
+                        En
                     </button>
                     <button className="text-white w-full sm:w-fit px-4 py-2 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
-                        Github
+                        Attendant
                     </button>
                 </div>
             </div>

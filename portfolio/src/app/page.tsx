@@ -1,8 +1,12 @@
 
+"use client";
 import HeroSection from "@/app/components/HeroSection";
 import Navbar from "@/app/components/Navbar";
 import AboutSection from "@/app/components/AboutSection";
 import ProjecSection from "@/app/components/ProjecSection";
+import EmailSection from "@/app/components/EmailSection";
+import Footer from "@/app/components/Footer";
+
 
 
 
@@ -14,7 +18,8 @@ export default function Home() {
             <HeroSection />
             <AboutSection />
             <ProjecSection />
-
+            <EmailSection />
+            <Footer />
         </div>
     </main>
   );
