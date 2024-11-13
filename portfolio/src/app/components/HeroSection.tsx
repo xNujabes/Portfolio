@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
-
+import Link from "next/link";
 
 const HeroSection = () => {
     return <section>
@@ -21,6 +21,10 @@ const HeroSection = () => {
                             'Game Developpeur',
                             1000,
                             'Web Developpeur',
+                            1000,
+                            'William',
+                            1000,
+                            'William ou Kori ;)',
                             1000
                         ]}
                         wrapper="span"
@@ -29,16 +33,22 @@ const HeroSection = () => {
                     />
                 </h1>
                 <p className="text-whitetext-base sm:text-lg lg:text-xl mb-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                    voluptatum quae, officiis, quos quod, officia quia voluptate
+                    Bienvenue sur mon portfolio, mon petit nuage. Ici vous en apprendrez plus sur moi (mais pas trop!),
+                    vous verrez mes différents projets et en bas de page vous trouverez des liens pour me contacter.
+                    Si vous avez des retours à faire sur ce portfolio je suis preneur !
+                    Bonne visite !
                 </p>
                 <div>
-                    <button className="bg-white text-black w-full sm:w-fit px-4 py-2 rounded-full mr-4 hover:bg-slate-200 text-black">
-                        En
-                    </button>
-                    <button className="text-white w-full sm:w-fit px-4 py-2 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
-                        Attendant
-                    </button>
+                    <a href="cv.pdf" download="cv.pdf">
+                        <button className="bg-white text-black w-full sm:w-fit px-4 py-2 rounded-full mr-4 hover:bg-slate-200 text-black">
+                            Mon CV
+                        </button>
+                    </a>
+                    <Link href="#contact">
+                        <button className="text-white w-full sm:w-fit px-4 py-2 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
+                            Me contacter
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="col-span-5 place-self-center mt-8 lg:mt-4">

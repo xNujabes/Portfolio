@@ -19,9 +19,9 @@ const projectsData: Project[] = [
         id: 1,
         title: "Portfolio en ligne",
         description: "C'est le site sur lequel vous vous trouvez ! Réalisé avec Next.js sous React",
-        image: "/images/projects/1.png",
+        image: "/images/projects/portfolio.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/xNujabes/Portfolio",
         previewUrl: "/",
     },
 ];
