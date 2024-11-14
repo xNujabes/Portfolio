@@ -39,7 +39,7 @@ const HeroSection = () => {
                     Bonne visite !
                 </p>
                 <div>
-                    <a href="cv.pdf" download="cv.pdf">
+                    <a href="CvWilliamPinel.pdf" download="CvWilliamPinel.pdf">
                         <button className="bg-white text-black w-full sm:w-fit px-4 py-2 rounded-full mr-4 hover:bg-slate-200 text-black">
                             Mon CV
                         </button>
@@ -53,9 +53,9 @@ const HeroSection = () => {
             </div>
             <div className="col-span-5 place-self-center mt-8 lg:mt-4">
                 <div className="rounded-full bg-[#141414] w-[300px] h-[300px] relative">
-                    <Image src="/img/jellyfish.png"
-                           alt="jellyfish"
-                           className="absolute transform -transate-x-1/2 -translate-y-1/2 top-1/2"
+                    <Image src="/img/photo.jpg"
+                           alt="photo"
+                           className="absolute transform  -translate-y-1/2 top-1/2"
                            width={300}
                            height={300}
                         >
