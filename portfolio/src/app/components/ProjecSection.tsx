@@ -24,6 +24,38 @@ const projectsData: Project[] = [
         gitUrl: "https://github.com/xNujabes/Portfolio",
         previewUrl: "/",
     },
+    {
+        id: 2,
+        title: "Dark Kingdom Defense",
+        description: "Projet réalisé en 2023 sur Microstudio en python. Ce jeu est un tower defense en 2D réalisé à l'occasion" +
+            " des trophées NSI de 2023, concours national de programmation pour lycéens. Dans ce jeu vous incarnerez" +
+            " le mal avec pour objectif de repousser les vagues ennemis incarnés par des Hommes !",
+        image: "/images/projects/dkd.png",
+        tag: ["All", "Jeu"],
+        gitUrl: "https://github.com/xNujabes/DarkKingdomDefense",
+        previewUrl: "/",
+    },
+    {
+        id: 3,
+        title: "Infinite Runner",
+        description: "Prototype développé sur Godot en GDScript pour mobile. Ce jeu est un jeu de type Infinite Runner en 3D, " +
+            "vous incarnerez un personnage qui devras courir pour ne pas se faire éjecter de l'écran par les obstacles.",
+        image: "/images/projects/InfiniteRunner.png",
+        tag: ["All", "Jeu"],
+        gitUrl: "https://github.com/xNujabes/InfiniteRunner",
+        previewUrl: "/",
+    },
+    {
+        id: 4,
+        title: "AquaClicker",
+        description: "Prototype développé sur Godot en GDScript. Ce jeu est un jeu de type Clicker en 2D." +
+            " Votre objectif serra comme la plupart des jeux incrémentaux et idle d'accumuler le plus d'argent" +
+            " mais aussi de collectionner les différentes espèces marines disponibles dans le jeu.",
+        image: "/images/projects/InfiniteRunner.png",
+        tag: ["All", "Jeu"],
+        gitUrl: "https://github.com/xNujabes/AquaClicker",
+        previewUrl: "/",
+    },
 ];
 
 const ProjectsSection = () => {
