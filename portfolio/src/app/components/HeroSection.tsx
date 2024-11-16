@@ -32,7 +32,7 @@ const HeroSection = () => {
                         repeat={Infinity}
                     />
                 </h1>
-                <p className="text-whitetext-base sm:text-lg lg:text-xl mb-6">
+                <p className="text-white text-base sm:text-lg lg:text-xl mb-6">
                     Bienvenue sur mon portfolio, mon petit nuage. Ici vous en apprendrez plus sur moi (mais pas trop!),
                     vous verrez mes différents projets et en bas de page vous trouverez des liens pour me contacter.
                     Si vous avez des retours à faire sur ce portfolio je suis preneur !
