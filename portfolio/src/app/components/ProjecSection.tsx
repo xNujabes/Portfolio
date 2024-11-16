@@ -11,7 +11,6 @@ interface Project {
     image: string;
     tag: string[];
     gitUrl: string;
-    previewUrl: string;
 }
 
 const projectsData: Project[] = [
@@ -19,10 +18,9 @@ const projectsData: Project[] = [
         id: 1,
         title: "Portfolio en ligne",
         description: "C'est le site sur lequel vous vous trouvez ! Réalisé avec Next.js sous React",
-        image: "/images/projects/portfolio.png",
-        tag: ["All", "Web"],
+        image: "/img/projets/portfolio.png",
+        tag: ["Tout", "Web"],
         gitUrl: "https://github.com/xNujabes/Portfolio",
-        previewUrl: "/",
     },
     {
         id: 2,
@@ -30,20 +28,18 @@ const projectsData: Project[] = [
         description: "Projet réalisé en 2023 sur Microstudio en python. Ce jeu est un tower defense en 2D réalisé à l'occasion" +
             " des trophées NSI de 2023, concours national de programmation pour lycéens. Dans ce jeu vous incarnerez" +
             " le mal avec pour objectif de repousser les vagues ennemis incarnés par des Hommes !",
-        image: "/images/projects/dkd.png",
-        tag: ["All", "Jeu"],
+        image: "/img/projets/dkd.png",
+        tag: ["Tout", "Jeux"],
         gitUrl: "https://github.com/xNujabes/DarkKingdomDefense",
-        previewUrl: "/",
     },
     {
         id: 3,
         title: "Infinite Runner",
         description: "Prototype développé sur Godot en GDScript pour mobile. Ce jeu est un jeu de type Infinite Runner en 3D, " +
             "vous incarnerez un personnage qui devras courir pour ne pas se faire éjecter de l'écran par les obstacles.",
-        image: "/images/projects/InfiniteRunner.png",
-        tag: ["All", "Jeu"],
+        image: "/img/projets/InfiniteRunner.png",
+        tag: ["Tout", "Jeux"],
         gitUrl: "https://github.com/xNujabes/InfiniteRunner",
-        previewUrl: "/",
     },
     {
         id: 4,
@@ -51,15 +47,14 @@ const projectsData: Project[] = [
         description: "Prototype développé sur Godot en GDScript. Ce jeu est un jeu de type Clicker en 2D." +
             " Votre objectif serra comme la plupart des jeux incrémentaux et idle d'accumuler le plus d'argent" +
             " mais aussi de collectionner les différentes espèces marines disponibles dans le jeu.",
-        image: "/images/projects/InfiniteRunner.png",
-        tag: ["All", "Jeu"],
+        image: "/img/projets/AquaClicker.png",
+        tag: ["Tout", "Jeux"],
         gitUrl: "https://github.com/xNujabes/AquaClicker",
-        previewUrl: "/",
     },
 ];
 
 const ProjectsSection = () => {
-    const [tag, setTag] = useState<string>("All");
+    const [tag, setTag] = useState<string>("Tout");
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
@@ -72,7 +67,7 @@ const ProjectsSection = () => {
     );
 
     const cardVariants = {
-        initial: { y: 50, opacity: 0 },
+        initial: { y: 75, opacity: 0 },
         animate: { y: 0, opacity: 1 },
     };
 
@@ -84,7 +79,7 @@ const ProjectsSection = () => {
             <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
                 <ProjectTag
                     onClick={handleTagChange}
-                    name="All"
+                    name="Tout"
                     isSelected={tag === "Tout"}
                 />
                 <ProjectTag
@@ -94,7 +89,7 @@ const ProjectsSection = () => {
                 />
                 <ProjectTag
                     onClick={handleTagChange}
-                    name="Jeu"
+                    name="Jeux"
                     isSelected={tag === "Jeux"}
                 />
             </div>
@@ -112,7 +107,6 @@ const ProjectsSection = () => {
                             title={project.title}
                             description={project.description}
                             gitUrl={project.gitUrl}
-                            previewUrl={project.previewUrl}
                         />
                     </motion.li>
                 ))}

@@ -40,12 +40,12 @@ const HeroSection = () => {
                 </p>
                 <div>
                     <a href="CvWilliamPinel.pdf" download="CvWilliamPinel.pdf">
-                        <button className="bg-white text-black w-full sm:w-fit px-4 py-2 rounded-full mr-4 hover:bg-slate-200 text-black">
+                        <button className="bg-white text-black w-full sm:w-fit px-4 py-2 rounded-full mr-4 hover:bg-white/90 text-black text-xl">
                             Mon CV
                         </button>
                     </a>
                     <Link href="#contact">
-                        <button className="text-white w-full sm:w-fit px-4 py-2 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
+                        <button className="text-white w-full sm:w-fit px-4 py-2 rounded-full bg-transparent hover:bg-gray-100/10 text-white border border-white mt-3 text-xl">
                             Me contacter
                         </button>
                     </Link>

@@ -17,12 +17,12 @@ const TAB_DATA: TabData[] = [
         id: "skills",
         content: (
             <div className="grid grid-cols-2">
-                <Badge variant="outline" className="mt-4 text-lg text-white">GDScript</Badge>
-                <Badge variant="outline" className="mt-4 ml-4 text-lg text-white" >Golang</Badge>
-                <Badge variant="outline" className="mt-4 text-lg text-white">Kotlin</Badge>
-                <Badge variant="outline" className="mt-4 ml-4 text-lg text-white">Python</Badge>
-                <Badge variant="outline" className="mt-4 text-lg text-white">Javascript</Badge>
-                <Badge variant="outline" className="mt-4 ml-4 text-lg text-white">HTML/CSS</Badge>
+                <Badge variant="outline" className="mt-4 text-lg text-white hover:bg-gray-100/10">GDScript</Badge>
+                <Badge variant="outline" className="mt-4 ml-4 text-lg text-white hover:bg-gray-100/10" >Golang</Badge>
+                <Badge variant="outline" className="mt-4 text-lg text-white hover:bg-gray-100/10">Kotlin</Badge>
+                <Badge variant="outline" className="mt-4 ml-4 text-lg text-white hover:bg-gray-100/10">Python</Badge>
+                <Badge variant="outline" className="mt-4 text-lg text-white hover:bg-gray-100/10">Javascript</Badge>
+                <Badge variant="outline" className="mt-4 ml-4 text-lg text-white hover:bg-gray-100/10">HTML/CSS</Badge>
             </div>
         ),
     },
@@ -31,9 +31,9 @@ const TAB_DATA: TabData[] = [
         id: "education",
         content: (
             <div className="grid grid-cols-1">
-                <Badge variant="outline" className="text-lg text-white">IUT Nantes : BUT Informatique Développement logiciels
+                <Badge variant="outline" className="text-lg text-white hover:bg-gray-100/10">IUT Nantes : BUT Informatique Développement logiciels
                     2023 - 2025</Badge><br/>
-                <Badge variant="outline" className="text-lg text-white">Lycée Paul Gauguin : Baccalauréat mention très bien
+                <Badge variant="outline" className="text-lg text-white hover:bg-gray-100/10">Lycée Paul Gauguin : Baccalauréat mention très bien
                     Mathématiques Informatique 2023</Badge>
 
             </div>
