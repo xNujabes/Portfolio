@@ -13,7 +13,7 @@ interface TabData {
 
 const TAB_DATA: TabData[] = [
     {
-        title: "Skills",
+        title: "Compétences",
         id: "skills",
         content: (
             <div className="grid grid-cols-2">
@@ -27,7 +27,7 @@ const TAB_DATA: TabData[] = [
         ),
     },
     {
-        title: "Education",
+        title: "Formation",
         id: "education",
         content: (
             <div className="grid grid-cols-1">
