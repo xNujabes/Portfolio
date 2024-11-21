@@ -20,9 +20,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     }
 
     return (
-        <div >
+        <div className="overflow=hidden">
             <div
-                className="h-52 md:h-72 rounded-t-xl relative group rounded-lg border-slate-300/10 border-[2px] z-10 shadow-white/10 shadow-lg hover:shadow-white/20  hover:shadow-xl transition-all duration-500 hover:scale-105 "
+                className="h-52 md:h-72 rounded-t-xl relative group rounded-lg border-slate-300/10 border-[2px] z-10 shadow-white/10 shadow-lg hover:shadow-white/20  hover:shadow-xl transition-all duration-500 "
                 style={{ background: `url(${imgUrl}) no-repeat center / cover` }}
             >
                 <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-black  hidden group-hover:flex group-hover:bg-opacity-50 transition-all duration-500 ">

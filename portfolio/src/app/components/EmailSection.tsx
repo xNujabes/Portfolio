@@ -1,49 +1,35 @@
-"use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
+import emailjs from "@emailjs/browser";
 
-interface EmailData {
-    email: string;
-    objet: string;
-    message: string;
-}
-const EmailSection = () => {
+export const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
-    const [emailData, setEmailData] = useState<EmailData>({
-        email: "",
-        objet: "",
+
+    const [formData] = useState({
         message: "",
+        email: "",
     });
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+
+    function sendEmail(e : any) {
         e.preventDefault();
-        const JSONdata = JSON.stringify(emailData);
-        const endpoint = "/api/send";
-
-        const options = {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSONdata,
-        };
-
-        const response = await fetch(endpoint, options);
-        await response.json();
-
-        if (response.status === 200) {
-            console.log("Message sent.");
-            setEmailSubmitted(true);
-        }
-    };
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setEmailData({ ...emailData, [name]: value });
-    };
+        emailjs
+            .send(
+                "service_19cb7jx",
+                "template_n7ekmq9",
+                formData,
+                "O8MXPRf5nN23jhVOS"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    setEmailSubmitted(true);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+        e.target.reset();
+    }
 
     return (
         <section
@@ -59,12 +45,7 @@ const EmailSection = () => {
                     Vous avez un projet ou vous souhaitez discuter de quelque chose ? Joignez moi ici.
                 </p>
                 <div className="socials flex flex-row gap-2">
-                    <Link href="https://github.com/xNujabes">
-                        <Image src={GithubIcon} alt="Github Icon" />
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/william-pinel-06a434304/">
-                        <Image src={LinkedinIcon} alt="Linkedin Icon" />
-                    </Link>
+
                 </div>
             </div>
             <div>
@@ -73,10 +54,8 @@ const EmailSection = () => {
                         Email envoyé !
                     </p>
                 ) : (
-                    <><h5 className="text-l italic text-[#626262] my-2">
-                        L'intégation de mail est en cours, pour le moment contactez-moi sur william.pinel987@gmail.com
-                    </h5>
-                        <form className="flex flex-col" onSubmit={handleSubmit}>
+                    <>
+                        <form className="flex flex-col" onSubmit={sendEmail}>
                             <div className="mb-6">
                                 <label
                                     htmlFor="email"
@@ -134,4 +113,5 @@ const EmailSection = () => {
     );
 };
 
-export default EmailSection;
+
+export default EmailSection
