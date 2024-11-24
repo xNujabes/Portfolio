@@ -49,10 +49,10 @@ export const EmailSection = () => {
                     </p>
                     <div className="socials flex flex-row gap-2 border border-[#33353F] rounded-3xl p-5 w-fit">
                         <div className="bg-[#181818] mr-2 p-2 rounded-full cursor-pointer">
-                            <Github onClick={() => window.open('https://github.com/xNujabes')} color="white" size="40" className="fill-white/0 hover:fill-white transition all duration-50 ease-in-out"/>
+                            <Github onClick={() => window.open('https://github.com/xNujabes')} color="white" size="40" className="fill-white/0 hover:fill-white transition all duration-100 ease-in-out"/>
                         </div>
                         <div className="bg-[#181818] mr-2 p-2 rounded-full cursor-pointer">
-                            <Linkedin onClick={() => window.open('https://www.linkedin.com/in/william-pinel-06a434304/')} color="white" size="40" className="fill-white/0 hover:fill-white transition all duration-50 ease-in-out"/>
+                            <Linkedin onClick={() => window.open('https://www.linkedin.com/in/william-pinel-06a434304/')} color="white" size="40" className="fill-white/0 hover:fill-white transition all duration-100 ease-in-out"/>
                         </div>
                     </div>
                 </div>
