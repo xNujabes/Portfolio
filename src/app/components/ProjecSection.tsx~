@@ -37,7 +37,7 @@ const projectsData: Project[] = [
         title: "Melody Odyssey",
         description: "Jeu réalisé à l'occasion de la Code Game Jam 2025. Survivor like développé sur Godot en GDScript." +
             " Vous devrez survivre face aux hordes d'ennemies, seul la musique serra capable de les vaincre !",
-        image: "/img/projets/MelodyOdyssey.png",
+        image: "/img/projets/InfiniteRunner.png",
         tag: ["Tout", "Jeux"],
         gitUrl: "https://github.com/xNujabes/code-game-jam",
     },
